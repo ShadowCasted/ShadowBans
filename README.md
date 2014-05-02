@@ -1,13 +1,14 @@
 ShadowBans
 Changelog 5/2/14:
-Created code for broadcasted or silent bans, need to be tested before added into the src.
+- Created code for broadcasted or silent bans, need to be tested before added into the src.
 
 Changelog 4/30/14:
+
 Added:
-Banning
-Kicking
-Unbanning
-Check if a player is banned
+- - Banning
+- Kicking
+- Unbanning
+- Check if a player is banned
 
 A project by the ShadowCasted team:
 
