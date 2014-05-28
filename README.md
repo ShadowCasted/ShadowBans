@@ -1,4 +1,11 @@
 ShadowBans
+Changelog 5/28/14:
+- Added Silent and Broadcasted ban
+- Fixed plugin.yml
+- Fixed banned.yml
+- BUGGED: Temp-ban only kicks the player for “:” time
+- BUGGED: Making it a silent ban will have “-s” in the ban reason
+
 Changelog 5/9/14:
 - Adapted everything to UUIDs.
 - Added :
