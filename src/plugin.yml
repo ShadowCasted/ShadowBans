@@ -1,6 +1,15 @@
-#Config file :
-#You don't have to configure anything here!
-
-bans:
-
-ends:
+author: ShadowCasted K1ds
+main: com.shadowcasted.shadowbans.ShadowBans
+name: ShadowBans
+version: 0.0.3
+commands:
+  ban:
+    description:
+  unban:
+    description:
+  tempban:
+    description:
+  checkban:
+    description:
+  uuid:
+    description:

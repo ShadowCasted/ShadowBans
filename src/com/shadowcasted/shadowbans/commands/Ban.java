@@ -21,6 +21,7 @@ public class Ban implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (sender.hasPermission("ShadowBans.ban")) {
+			
 			if (args.length >= 1) {
 				UUID uuid = null;
 				if (args[0].matches("[0-9a-zA-Z-]{36}")) {
@@ -33,6 +34,14 @@ public class Ban implements CommandExecutor {
 						if (test.getName().equals(args[0])) {
 							uuid = test.getUniqueId();
 							break;
+						}
+				
+					if (args[1].equals("-s")) {
+						sender.sendMessage(ChatColor.GRAY + "You have banned" + uuid);
+					}
+				
+				if (!args[1].equals("-s")){
+					test.sendMessage("Player " + uuid +" has been banned");
 						}
 					}
 				}
@@ -49,6 +58,7 @@ public class Ban implements CommandExecutor {
 						reason = ChatColor.DARK_RED + "You have been banned by " + ChatColor.RED + sender.getName() + ".";
 					}
 
+					sender.sendMessage(ChatColor.GRAY + "You have banned " + ChatColor.RED  + uuid + ".");
 					ShadowBans.sconfig.getConfig().set("bans." + uuid.toString(), reason);
 					ShadowBans.sconfig.saveConfig();
 

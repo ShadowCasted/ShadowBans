@@ -32,6 +32,7 @@ public class Unban implements CommandExecutor {
 						ShadowBans.sconfig.getConfig().set("bans." + uuid.toString(), null);
 						if (ShadowBans.sconfig.getConfig().isSet("ends." + uuid.toString())) {
 							ShadowBans.sconfig.getConfig().set("ends." + uuid.toString(), null);
+							Bukkit.broadcast("Player " + uuid + " has been unbanned", null);
 						}
 	
 						ShadowBans.sconfig.saveConfig();
