@@ -1,3 +1,9 @@
+
+//Experimental code that needs to be implemented and tested
+/* if (reason.startsWith("-s ")) {
+    reason = reason.subStr(3);
+}*/
+
 package com.shadowcasted.shadowbans.commands;
 
 import java.util.UUID;
