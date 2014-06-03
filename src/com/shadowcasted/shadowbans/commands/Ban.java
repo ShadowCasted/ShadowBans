@@ -41,14 +41,6 @@ public class Ban implements CommandExecutor {
 							uuid = test.getUniqueId();
 							break;
 						}
-				
-					if (args[1].equals("-s")) {
-						sender.sendMessage(ChatColor.GRAY + "You have banned" + uuid);
-					}
-				
-				if (!args[1].equals("-s")){
-					test.sendMessage("Player " + uuid +" has been banned");
-						}
 					}
 				}
 				if (uuid != null) {
@@ -61,7 +53,7 @@ public class Ban implements CommandExecutor {
 					}
 					reason = reason.substring(0, reason.length()-1);
 					if (args.length == 1) {
-						reason = ChatColor.DARK_RED + "You have been banned by " + ChatColor.RED + sender.getName() + ".";
+					reason = ChatColor.DARK_RED + "You have been banned by " + ChatColor.RED + sender.getName() + ".";
 					}
 
 					sender.sendMessage(ChatColor.GRAY + "You have banned " + ChatColor.RED  + uuid + ".");
